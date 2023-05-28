@@ -1,0 +1,51 @@
+label{
+   display:flex;
+    flex-direction:column;
+    width:20px;
+    cursor:pointer;
+}
+  
+label span{
+    background-color: #495e57;    
+    border-radius:10px;
+    height:2px;
+    margin: 2px 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.nav-link {
+    color: #495e57;
+}
+
+.nav-link:hover {
+    color: #495e579c;
+}
+
+.navbar-toggler {
+    outline: none;
+    border: none;
+}
+  
+span:nth-of-type(1){
+    width:50%;
+}
+  
+span:nth-of-type(2){
+    width:100%;
+}
+
+  
+input[type="checkbox"]{
+   display:none;
+} 
+  
+input[type="checkbox"]:checked ~ span:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(4px,4px);
+    width: 105%;
+} 
+  
+input[type="checkbox"]:checked ~ span:nth-of-type(2){
+    transform-origin:top;
+    transform:rotatez(-45deg)
+}

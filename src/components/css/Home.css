@@ -1,0 +1,18 @@
+.header {
+    background-color: #495e57;
+    color: white;
+    padding: 5%;
+}
+
+.title {
+    color: #f4ce14;
+}
+
+.btn {
+    background-color: #f4ce14;
+}
+
+.btn:hover {
+    background-color: #f4cf14ce;
+    color: #000;
+}
