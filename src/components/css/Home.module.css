@@ -1,0 +1,17 @@
+.header {
+    background-color: #495e57;
+    color: white;
+    padding: 5%;
+}
+
+.title {
+    color: #f4ce14;
+}
+
+.overlayImage {
+    box-shadow: 15px 15px 0px #293531;
+}
+
+.overlayImage:hover {
+    box-shadow: 15px 15px 0px #0000009f;
+}

@@ -1,10 +1,12 @@
+import { Fragment, useContext } from "react";
+import styles from '../components/css/OnlineMenuItems.module.css'
 import { motion } from 'framer-motion'
-import styles from '../components/css/Specials.module.css';
-import { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import { CartContext } from "./context/CartContext";
 
+const OnlineMenuItems = ({specials}) => {
 
-const Specials = ({specials}) => {
+    const { addToCart } = useContext(CartContext);
+
     return (
         <Fragment>
                 {specials.map((special) => (
@@ -17,7 +19,16 @@ const Specials = ({specials}) => {
                                     <p className={`col text-end ${styles.price}`}>{special.price}</p>
                                 </div>
                                 <p className="card-text">{special.description}</p>
-                                <Link className="btn btn-warning" to='onlinemenu'>Online Menu</Link>                       
+                                <div className="input-group d-flex justify-content-between">
+                                    <input type="number" className="form-control"/>
+                                    <motion.button
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }} 
+                                    type="button" className="btn btn-warning"
+                                    onClick={() => addToCart(special)}
+                                    > Add to cart
+                                    </motion.button> 
+                                </div>
                             </div>
                         </div>
                     </div>                    
@@ -26,4 +37,4 @@ const Specials = ({specials}) => {
     );
 }
  
-export default Specials;
+export default OnlineMenuItems;

@@ -1,29 +1,11 @@
-.adv {
-    padding: 5%;
-}
-
-.specials {
-    padding: 0 5% 5% 5%;
-}
-
 .card {
     background-color: #edefee;
     border: none;
-    height: 400px;
-    overflow-y: scroll;
 }
 
 .price {
     color: #ee9972;
     font-weight: 600;
-}
-
-.btn {
-    background-color: #f4ce14;
-}
-
-.btn:hover {
-    background-color: #f4cf14ce;
 }
 
 .onlineMenu {
@@ -58,3 +40,10 @@
     }
 }
 
+.title {
+    color: #f4ce14;
+}
+
+.headerMenu {
+    background-color: #495e57;
+}

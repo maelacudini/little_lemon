@@ -1,0 +1,58 @@
+.adv {
+    padding: 5%;
+}
+
+@media screen and (max-width: 768px){
+    .adv {
+        margin-top: 50px;
+    }
+}
+
+.specials {
+    padding: 0 5% 5% 5%;
+}
+
+.card {
+    background-color: #edefee;
+    border: none;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.price {
+    color: #ee9972;
+    font-weight: 600;
+}
+
+.onlineMenu {
+    display: flex;
+    justify-content: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #8d8d8d;
+}
+
+@media screen and (max-width: 600px) {
+    .onlineMenu {
+        display: flex;
+        justify-content: start;
+    }
+}
+

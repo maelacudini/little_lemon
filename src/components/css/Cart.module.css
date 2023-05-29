@@ -1,0 +1,38 @@
+.cartIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    z-index: 100;
+}
+
+.btn {
+    padding: 30px;
+    border-radius: 100%;
+}
+
+.card {
+    background-color: #495e57;
+    padding: 5%;
+    margin: 5%;
+}
+
+.checkout {
+    border: 2px solid #495e57;
+    padding: 5%;
+    margin: 5%;
+}
+
+.intro {
+    padding: 5% 5% 0 5%;
+}
+
+.linkToMenu {
+    transition: 0.2s;
+    color: #495e57;
+}
+
+.linkToMenu:hover {
+    transition: 0.2s;
+    color: #495e579c;
+}
