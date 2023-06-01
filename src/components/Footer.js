@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <Fragment>
             <div className={`row text-white ${styles.row}`}>
-                <div className="col-lg-8">
+                <div className="col-lg-7">
                     <h4 className={styles.title}>Opening Hours</h4>
                     <table class="table text-white">
                         <thead>
@@ -64,6 +64,7 @@ const Footer = () => {
                     </table>
                     <p>* we are closed <b>Wednesday</b></p>
                 </div>
+                <div className="col-lg-1"></div>
                 <div className={`col-lg-4 ${styles.infos}`}>
                 <h4 className={styles.title}>Infos</h4>
                 <p>
@@ -71,6 +72,9 @@ const Footer = () => {
                     LittleLemonChicago@gmail.com <br />
                     +12 345 6789 <br />
                     Some Copyright Statement 
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, eius harum assumenda corporis enim numquam ad porro reiciendis, animi, illum non. Maiores sed eligendi commodi ex dolorum necessitatibus! Minima, officiis!
                 </p>
                     <h4 className={styles.title}>Our Socials</h4>
                     <i className={`bi bi-facebook ${styles.social}`}></i>

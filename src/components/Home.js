@@ -3,7 +3,7 @@ import headerImg from '../assets/restauranfood.jpg';
 import { motion } from 'framer-motion'
 import SpecialsList from "./SpecialsList";
 import { Link } from 'react-router-dom';
-import Footer from './Footer';
+import Logo from '../assets/Logo.svg'
 
 const Home = () => {
 
@@ -20,6 +20,7 @@ const Home = () => {
                     Our warm and welcoming ambiance sets the stage for <b>memorable moments</b>, whether you're enjoying an intimate dinner or gathering with friends. 
                     Immerse yourself in a vibrant culinary journey at Little Lemon, where unforgettable flavors await!
                     </p>
+                    <br />
                     <Link className="btn btn-warning" to='reservations'>Reserve a Table</Link>                    
                 </div>
                 <div className="col-md-4 d-flex justify-content-center">

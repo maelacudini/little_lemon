@@ -2,11 +2,6 @@
     padding: 5%;
 }
 
-@media screen and (max-width: 768px){
-    .adv {
-        margin-top: 50px;
-    }
-}
 
 .specials {
     padding: 0 5% 5% 5%;
@@ -26,7 +21,7 @@
 
 .onlineMenu {
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 /* width */

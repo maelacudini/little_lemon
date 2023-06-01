@@ -13,7 +13,7 @@ const SpecialsList = () => {
     //Specials.js and SpecialsList.js have the same css file, Specials.css
     return (
         <Fragment>
-            <div className={`row ${styles.adv}`}>
+            <div className={`row mt-3 ${styles.adv}`}>
                 <div className="col-sm-8"><h1>This Weeks Specials!</h1></div>
                 <div className={`${styles.onlineMenu} col-sm-4`}>
                     <div>
