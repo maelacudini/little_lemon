@@ -3,6 +3,7 @@ import headerImg from '../assets/restauranfood.jpg';
 import { motion } from 'framer-motion'
 import SpecialsList from "./SpecialsList";
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 const Home = () => {
 
@@ -28,7 +29,7 @@ const Home = () => {
                     alt="header img" height={'auto'} width={'250px'} className={styles.overlayImage}/>
                 </div>
             </div>
-            <SpecialsList ></SpecialsList>  
+            <SpecialsList ></SpecialsList> 
         </article>
     );
 }

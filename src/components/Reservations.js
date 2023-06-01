@@ -1,8 +1,6 @@
-import { motion } from 'framer-motion'
 import styles from '../components/css/Reservations.module.css'
 import { Fragment, useState } from 'react';
-import useFetch from './hooks/useFetch';
-import { number } from 'yup';
+
 
 const Reservations = () => {
 
@@ -47,7 +45,7 @@ const Reservations = () => {
         }).finally(() => {
             setIsLoading(false);
         });
-        };
+    };
     
 
     return (
@@ -66,8 +64,9 @@ const Reservations = () => {
                 <h3 className={`mb-3 ${styles.title}`}>Reserve a table at Little Lemon!</h3>
                 <p className={feedback.includes('Error') ? styles.textred : styles.textwhite}>{feedback}</p>
                 <div className="mb-3">
-                    <label className={`form-label text-white`}>Email address</label>
+                    <label className={`form-label text-white`} htmlFor='email'>Email address</label>
                     <input 
+                        id='email'
                         type="email" 
                         className="form-control" 
                         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" 
@@ -76,8 +75,9 @@ const Reservations = () => {
                         required/>
                 </div>
                 <div className="mb-3">
-                    <label className={`form-label text-white`}>Phone number</label>
+                    <label className={`form-label text-white`} htmlFor='number'>Phone number</label>
                     <input 
+                        id='number'
                         type="number" 
                         className="form-control" 
                         minLength={8} 
@@ -86,8 +86,9 @@ const Reservations = () => {
                         required/>
                 </div>
                 <div className="mb-3">
-                    <label className={`form-label text-white`}>Name</label>
+                    <label className={`form-label text-white`} htmlFor='name'>Name</label>
                     <input 
+                        id='name'
                         type="text" 
                         className="form-control" 
                         minLength={3} 
@@ -96,8 +97,9 @@ const Reservations = () => {
                         required/>
                 </div>
                 <div className="mb-3">
-                    <label className={`form-label text-white`}>Number of guests</label>
+                    <label className={`form-label text-white`} htmlFor='guestNumber'>Number of guests</label>
                     <input 
+                        id='guestNumber'
                         type="number"  
                         className="form-control" 
                         min={1} 
@@ -106,8 +108,9 @@ const Reservations = () => {
                         required/>
                 </div>
                 <div className="mb-3">
-                    <label className={`form-label text-white`}>Time</label>
+                    <label className={`form-label text-white`} htmlFor='time'>Time</label>
                     <input 
+                        id='time'
                         type="time" 
                         className="form-control" 
                         value={time}
@@ -115,8 +118,9 @@ const Reservations = () => {
                         required/>
                 </div>
                 <div className="mb-3">
-                    <label className={`form-label text-white`}>Date</label>
+                    <label className={`form-label text-white`} htmlFor='date'>Date</label>
                     <input 
+                        id='date'
                         type="date" 
                         className="form-control" 
                         value={date}
@@ -124,8 +128,9 @@ const Reservations = () => {
                         required/>
                 </div>
                 <div className="mb-3">
-                    <label className={`form-label text-white`}>Description</label>
+                    <label className={`form-label text-white`} htmlFor='description'>Description</label>
                     <textarea 
+                        id='description'
                         className={`form-control ${styles.formInput}`} 
                         placeholder='Optional'
                         value={description}

@@ -1,0 +1,23 @@
+.row {
+    background-color: #495e57;
+    padding: 5%;
+}
+
+.title {
+    color: #f4ce14;
+}
+
+.social {
+    font-size: 25px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.social:hover {
+    transition: 0.3s;
+    color: #f4ce14;
+}
+
+.infos {
+    margin: 0 auto;
+}

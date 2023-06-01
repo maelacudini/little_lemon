@@ -18,9 +18,7 @@ const About = () => {
                 Another driving force behind opening Little Lemon was the desire to showcase the abundance of fresh and seasonal ingredients available in the region. The founders believed in supporting local farmers and suppliers while embracing sustainable practices. By partnering with local producers, they were able to create a menu that not only delighted taste buds but also contributed to the growth of the community.
                 Together, these motivations led to the birth of Little Lemon, a culinary destination that continues to captivate patrons with its inspired dishes, inviting ambiance, and dedication to providing a memorable dining experience.
             </p>
-            <div className="d-flex justify-content-center">
-                <img src={logo} alt="logo" className={styles.logoImage} />
-            </div>
+            <br />
             <p>
                 At Little Lemon, our passion for exceptional dining experiences is reflected in every aspect of our restaurant. Located in the heart of Chicago, we strive to create a warm and inviting atmosphere where guests can unwind and savor the flavors of our culinary creations.
                 Our dedicated team of chefs combines their expertise and creativity to curate a menu that celebrates the finest ingredients, both local and international. From farm-fresh produce to expertly sourced meats and seafood, each dish is meticulously crafted to deliver an unforgettable culinary journey.
@@ -28,7 +26,9 @@ const About = () => {
                 At Little Lemon, we also take pride in our thoughtfully curated wine selection and handcrafted cocktails, designed to perfectly complement our culinary offerings.
                 Join us at Little Lemon and embark on a gastronomic adventure where impeccable flavors, warm hospitality, and a vibrant ambiance combine to create an extraordinary dining experience in the heart of Chicago.
             </p>
-
+            <div className="d-flex justify-content-center">
+                <img src={logo} alt="logo" className={styles.logoImage} />
+            </div>
             
             <motion.div whileHover={{ scale: 1.1 }} id="carouselExampleSlidesOnly" className={`carousel slide overlay-image pt-3 rounded ${styles.carousel}`} data-bs-ride="carousel">
                 <div className="carousel-inner">

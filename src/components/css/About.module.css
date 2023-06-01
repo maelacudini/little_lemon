@@ -1,11 +1,13 @@
 .carousel {
     max-width: 600px;
     margin: 0 auto;
-    box-shadow: 15px 20px 0px #293531;
+    box-shadow: 15px 20px 0px #00000077;
+    transition: 0.2s;
 }
 
 .carousel:hover {
-    box-shadow: 15px 20px 0px #0000009f;
+    box-shadow: 15px 20px 0px #000000c5;
+    transition: 0.2s;
 }
 
 .logoImage {
@@ -15,8 +17,6 @@
 }
 
 .header {
-    background-color: #495e57;
-    color: white;
     padding: 5%;
 }
 

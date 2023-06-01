@@ -46,22 +46,19 @@
     {
       "email": "mario@gmail.com",
       "phone": "1234567890",
-      "name": "Super Mario",
+      "name": "mario",
       "guests": "2",
-      "time": "21:00",
-      "date": "2023-08-14",
-      "description": "It's me and Peach!",
-      "id": "-M5_6dI"
-    },
-    {
-      "email": "es@gmail.com",
-      "phone": "1234568080980",
-      "name": "Esempio",
-      "guests": "21",
-      "time": "12:00",
+      "time": "12:15",
       "date": "2023-12-12",
-      "description": "",
-      "id": "r1ATUjm"
+      "description": "it's me, mario!",
+      "id": "0KR1aBY"
+    }
+  ],
+  "login": [
+    {
+      "id": "1",
+      "username": "mario",
+      "password": "pass"
     }
   ]
 }

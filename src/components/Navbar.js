@@ -1,8 +1,16 @@
 import styles from '../components/css/Navbar.module.css';
 import Logo from '../assets/Logo.svg'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({isLoggedIn, setIsLoggedIn}) => {
+
+  const navigate = useNavigate();
+
+  const handleLogout = (event) => {
+      event.preventDefault();
+      setIsLoggedIn(false)
+      navigate('/');
+  };
   
   return (
     <nav className="navbar navbar-expand-lg">
@@ -21,7 +29,8 @@ const Navbar = () => {
             <Link className={`nav-link ${styles.navLink}`} to='about'>About</Link>
             <Link className={`nav-link ${styles.navLink}`} to='reservations'>Reservations</Link>
             <Link className={`nav-link ${styles.navLink}`} to='onlinemenu'>Online Menu</Link>
-            <Link className={`nav-link ${styles.navLink}`} to='login'>Login</Link>
+            {!isLoggedIn && <Link className={`nav-link ${styles.navLink}`} to='login'>Login</Link>}
+            {isLoggedIn && <Link className={`nav-link ${styles.navLink}`} onClick={handleLogout}>Logout</Link>}
           </div>
         </div>
       </div>

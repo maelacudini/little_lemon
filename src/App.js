@@ -11,24 +11,28 @@ import OnlineMenu from '../src/components/OnlineMenu.js';
 import Cart from './components/Cart.js';
 import CartItems from './components/CartItems.js';
 import { CartProvider } from './components/context/CartContext.js';
+import { useState } from 'react';
+import Footer from './components/Footer.js';
 
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <CartProvider>
       <BrowserRouter>
-        <Navbar/>
+        <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
         <Cart/>
           <Routes>
             <Route exact path="/" element={ <Home/> }></Route>
             <Route path="about" element={ <About/> }></Route>
             <Route path="reservations" element={ <Reservations/> }></Route>
             <Route path="onlinemenu" element={ <OnlineMenu/> }></Route>
-            <Route path="login" element={ <Login/> }></Route>
+            <Route path="login" element={ <Login setIsLoggedIn={setIsLoggedIn}/> }></Route>
             <Route path='cartitems' element={ <CartItems/> }></Route>
             <Route path="*" element={ <Error/> }></Route>
           </Routes>
+          <Footer></Footer> 
       </BrowserRouter>
     </CartProvider>
   );

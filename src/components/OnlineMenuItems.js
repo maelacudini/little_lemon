@@ -20,7 +20,6 @@ const OnlineMenuItems = ({specials}) => {
                                 </div>
                                 <p className="card-text">{special.description}</p>
                                 <div className="input-group d-flex justify-content-between">
-                                    <input type="number" className="form-control"/>
                                     <motion.button
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }} 
