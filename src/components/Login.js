@@ -5,12 +5,9 @@ import { useNavigate } from 'react-router-dom';
 const Login = ({ setIsLoggedIn }) => {
 
     const [data, setData] = useState(null);
-    const [enteredUsername, setEnteredUsername] = useState('');
-    const [enteredPassword, setEnteredPassword] = useState('');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [feedback, setFeedback] = useState('');
-    const [formIsValid, setFormIsValid] = useState(false);
     const navigate = useNavigate();
   
     useEffect(() => {
